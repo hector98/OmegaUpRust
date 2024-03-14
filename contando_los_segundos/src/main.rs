@@ -18,9 +18,12 @@ fn main() {
     }else if d > d_s {
         println!("Mas suerte para la siguiente");
     }else {
-        m = if s > 0 { m + 1 } else { m };
-        h = if m > 0 { h + 1 } else { h };
-        d = if h > 0 { d + 1 } else { d };
+        m = if s_s - s > 0 || s > 0 { m + 1 } else { m };
+        h = if m_s - m > 0 || m > 0 { h + 1 } else { h };
+        d = if h_s - h > 0 || h > 0 { d + 1 } else { d };
+
+        //if s_s - s > 0 {
+
 
         println!("{} {} {} {}", d_s - d, h_s - h, m_s - m, s_s - s);
     }
