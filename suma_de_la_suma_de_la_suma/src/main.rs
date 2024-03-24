@@ -21,4 +21,10 @@ fn main() {
     }
 
     println!("{}", sum_total);
+    println!("{}", sum(n));
+}
+
+fn sum(n: u128) -> u128 {
+    let sum: u128 = (n * (n + 1) / 2) * (n * (n + 1) / 2);
+    sum;
 }
