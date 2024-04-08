@@ -10,7 +10,7 @@ fn main() {
         .expect("Failed to read line");
     let n: u32 = n.trim().parse().expect("Not a number");
 
-    let mut words: Vec<String> = Vec::new();
+    let mut words = vec!["".to_string(); n as usize];
     let mut w = String::new();
     let mut result = String::from("");
     let mut r: u8 = 0;
