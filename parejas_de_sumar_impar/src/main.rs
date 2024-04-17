@@ -34,26 +34,32 @@ fn main() {
                 pares += 1;
             }
 
-            if b % 2 == 0 {
-                pares += 1;
-            }
+            if j == k {
+                if b % 2 == 0 {
+                    pares += 1;
+                }
+            } else {
+                if b % 2 == 0 {
+                    pares += 1;
+                }
 
-            if c % 2 == 0 {
-                pares += 1;
+                if c % 2 == 0 {
+                    pares += 1;
+                }
             }
 
             if d % 2 == 0 {
                 pares += 1;
             }
 
-            if i == j || k == l || j == 0 {
-                break;
-            }
-
             i += 1;
             j -= 1;
             k += 1;
             l -= 1;
+
+            if i == j || k == l || j == 0 {
+                break;
+            }
 
         }
     } else {
